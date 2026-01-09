@@ -94,3 +94,14 @@
   mask-clip: padding-box, border-box;
   mask-composite: intersect;
 }
+
+@media (prefers-color-scheme: light) {
+  .glow-card {
+    --active: 0.08;
+  }
+  
+  .glows::after,
+  .glows::before {
+    filter: brightness(0.8);
+  }
+}
